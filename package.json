@@ -1,0 +1,20 @@
+{
+  "name": "change-spy",
+  "version": "0.0.1",
+  "description": "Keep track of your important files.",
+  "keywords": [
+    "git",
+    "hooks",
+    "pre-commit",
+    "file tracker",
+    "file validation"
+  ],
+  "main": "init.js",
+  "author": "kyle plump",
+  "license": "ISC",
+  "bin": {
+    "spy-init": "./init.js",
+    "spy-verify": "./verify.js",
+    "spy-restore": "./restore.js"
+  }
+}
