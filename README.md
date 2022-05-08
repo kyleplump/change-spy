@@ -1,29 +1,38 @@
-# change-spy
+# Change Spy
 
-## Project setup
-```
-npm install change-spy
-```
+> Maintain your file integrity!
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Single Page App developers are all to familiar with `config` files to store application constants.  Frequently, you'll have multiply copies of the same key for different environments.  For example:
 
-### Compiles and minifies for production
 ```
-npm run build
+export const API_ENDPOINT="https://myproduction.api.com";
+// export const API_ENDPOINT="localhost:3000";
 ```
 
-### Run your tests
+Have you uncommented the localhost endpoint, and then accidentally commit it to the repository? Never again!  Change Spy helps maintain file integrity in your projects by tracking a file's content, and then offers actions to verify if it had changed and optionally restore to the cached version of the file.  Intended to work with git-hook libraries like [Husky](https://github.com/typicode/husky).
+
+
+# Installation
 ```
-npm run test
+npm install change-spy --save-dev
 ```
 
-### Lints and fixes files
-```
-npm run lint
+# Usage
+
+Track a file (no limit on number of tracked files):
+```sh
+spy-init ./path/to/myfile.js
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Verify if any tracked files have changed:
+```sh
+spy-verify
+```
+
+Restore any changed tracked files to their cached state (the file state when spying started):
+```sh
+spy-restore
+```
+
+
+
