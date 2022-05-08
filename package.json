@@ -9,6 +9,11 @@
     "file tracker",
     "file validation"
   ],
+  "homepage": "https://github.com/kyleplump/change-spy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyleplump/change-spy"
+  },
   "main": "init.js",
   "author": "kyle plump",
   "license": "GNU",
