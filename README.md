@@ -21,17 +21,17 @@ npm install change-spy --save-dev
 
 Track a file (no limit on number of tracked files):
 ```sh
-spy-init ./path/to/myfile.js
+npx spy-init ./path/to/myfile.js
 ```
 
 Verify if any tracked files have changed:
 ```sh
-spy-verify
+npx spy-verify
 ```
 
 Restore any changed tracked files to their cached state (the file state when spying started):
 ```sh
-spy-restore
+npx spy-restore
 ```
 
 

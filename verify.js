@@ -5,6 +5,7 @@ const path = require('path');
 
 const _mapPath = path.resolve(__dirname, '_map.json');
 console.log('-- Verifying file integrity ...')
+let hasChanges = false;
 
 if(fs.existsSync(_mapPath)) {
 
@@ -29,6 +30,7 @@ if(fs.existsSync(_mapPath)) {
             const hex = hash.digest('hex')
 
             if(hex !== fileHash) {
+                hasChanges = true;
                 console.log('-- !! File content changed !!: ', fileName)
             }
         }
@@ -36,4 +38,8 @@ if(fs.existsSync(_mapPath)) {
 }
 else {
     // todo
+}
+
+if(!hasChanges) {
+    console.log('-- Success')
 }

@@ -6,7 +6,7 @@ const path = require('path');
 const _mapPath = path.resolve(__dirname, '_map.json');
 
 const args = process.argv.slice(2);
-console.log('-- Spying on: ', + args[0]);
+console.log('-- Spying on: ', args[0]);
 const file = fs.readFileSync(args[0]);  
 const content = file.toString();
 
