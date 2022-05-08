@@ -11,7 +11,7 @@
   ],
   "main": "init.js",
   "author": "kyle plump",
-  "license": "ISC",
+  "license": "GNU",
   "bin": {
     "spy-init": "./init.js",
     "spy-verify": "./verify.js",
