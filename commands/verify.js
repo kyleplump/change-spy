@@ -34,12 +34,12 @@ if(fs.existsSync(_mapPath)) {
                 console.log('-- !! File content changed !!: ', fileName)
             }
         }
+
+        if(!hasChanges) {
+            console.log('-- All Files Intact!')
+        }
     })
 }
 else {
     // todo
-}
-
-if(!hasChanges) {
-    console.log('-- Success')
 }

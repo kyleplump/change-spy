@@ -1,6 +1,6 @@
 {
   "name": "change-spy",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Keep track of your important files.",
   "keywords": [
     "git",
@@ -18,8 +18,10 @@
   "author": "kyle plump",
   "license": "GNU",
   "bin": {
-    "spy-init": "./init.js",
-    "spy-verify": "./verify.js",
-    "spy-restore": "./restore.js"
+    "spy-init": "./commands/init.js",
+    "spy-verify": "./commands/verify.js",
+    "spy-restore": "./commands/restore.js",
+    "spy-list": "./commands/list.js",
+    "spy-clear": "./commands/clear.js"
   }
 }

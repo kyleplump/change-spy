@@ -34,5 +34,15 @@ Restore any changed tracked files to their cached state (the file state when spy
 npx spy-restore
 ```
 
+List all files being spied on:
+```sh
+npx spy-list
+```
+
+Clear list of spied files and stop spying:
+```sh
+npx spy-clear
+```
+
 
 
